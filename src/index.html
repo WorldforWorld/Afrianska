@@ -115,7 +115,7 @@
             <span class="team__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
           </div>
           <!-- /.team__text -->
-          <a href="contacts.html" class="button">Let’s Talk</a>
+          <a href="#" class="button modal__btn">Let’s Talk</a>
         </div>
         <!-- /.team -->
       </div>
@@ -202,5 +202,39 @@
     <!-- /.footer__wrap -->
   </footer>
   <!-- /.footer -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
+      <form action="" method="POST" class="form modal__form" id="ajax_form">
+        <p class="form__block">
+          <label class="form__label">Full Name</label>
+          <input class="form__input" type="text" name="first_name" placeholder="Your Name" minlength="2" required >
+        </p>
+        <p class="form__block">
+          <label class="form__label">Email</label>
+          <input class="form__input" type="email" name="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </p>
+        <p class="form__block">
+          <label class="form__label">Message</label>
+          <textarea class="form__textarea" name="message" id="" cols="30" rows="5" placeholder="Your Message" minlength="5" required></textarea>
+        </p>
+        <a href="#" class="button form__button" id="btn">SUBMIT</a>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <div class="message">
+    <div class="message__dialog">
+      <button class="message__close"></button>
+      <span class="message__text">Форма успешно отправлена</span>
+    </div>
+  </div>
+  <!-- Вот в этот id="result_form" передается результат обработки формы -->
+  <div id="result_form"></div> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

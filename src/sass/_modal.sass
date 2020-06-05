@@ -1,0 +1,36 @@
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($black, 0.6)
+  display: flex
+  align-items: center
+  justify-content: center
+  &__dialog
+    position: absolute
+  &--visible
+    opacity: 1
+    visibility: visible
+    z-index: 99999999999999
+  &__close
+    outline: none
+    position: absolute
+    right: -74px
+    top: 23px
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+input:invalid
+  border-color: red
+input:valid
+  border-color: green
