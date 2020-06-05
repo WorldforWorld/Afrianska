@@ -1,0 +1,109 @@
+.blog
+  &__container
+    max-width: 940px
+    width: 100%
+    margin: 0 auto
+  &__text
+    font-family: 'Gilroy-Semibold'
+    font-size: 20px
+    line-height: 25px
+    color: $input
+    opacity: 0.8
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-right: -15px
+    padding-bottom: 78px
+    border-bottom: 1px solid rgba($black, 0.2)
+  &__seeall
+    text-align: right
+    margin-top: -44px
+    margin-bottom: 56px
+    font-family: 'Gilroy-Semibold'
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: $input
+    opacity: 0.8
+  &__navigation
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+.article
+  display: flex
+  flex-direction: row
+  margin-bottom: 33px
+  &_column
+    flex-direction: column-reverse
+    width: 315px
+  &_reverce
+    justify-content: flex-end
+    flex-direction: row-reverse
+  &__text
+    margin-right: 20px
+  &__title
+    max-width: 380px
+    margin-top: 0
+    margin-bottom: 32px
+    font-family: 'Galien'
+    font-size: 48px
+    line-height: 58px
+    letter-spacing: 0.04em
+    color: $titletext
+    &_column
+      font-size: 28px
+      line-height: 38px
+    &_reverce
+      margin-top: -2px
+      margin-bottom: 16px
+      max-width: 540px
+  &__subtitle
+    display: inline-block
+    max-width: 380px
+    margin-bottom: 35px
+    font-family: 'Gilroy-Regular'
+    font-size: 16px
+    line-height: 26px
+    letter-spacing: 0.04em
+    color: $black
+    opacity: 0.6
+    &_reverce
+      max-width: 541px
+      margin-bottom: 14px
+  &__image
+    max-width: 540px
+    &_reverce
+      margin-right: 20px
+      & img
+        width: 300px
+        height: 200px
+
+
+.d3 
+  margin-top: 56px
+  margin-bottom: 56px
+  & form 
+    position: relative
+    border-radius: 10px
+    background: #F4F4F4
+  & input, & button 
+    border: none
+    outline: none
+    background: transparent
+  & input 
+    width: 100%
+    height: 56px
+    padding-left: 72px
+    font-family: 'Gilroy-Light'
+    font-size: 16px
+    line-height: 19px
+    color: #1F3F68
+    opacity: 0.6
+  & button 
+    position: absolute
+    top: 16px
+    left: 24px
+    cursor: pointer

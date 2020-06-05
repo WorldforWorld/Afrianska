@@ -1,0 +1,113 @@
+.button
+  position: relative
+  text-align: center
+  width: 220px
+  padding: 15px 48px
+  background: #5A98D0
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2)
+  border-radius: 10px
+  font-size: 16px
+  line-height: 26px
+  letter-spacing: 0.04em
+  color: $white
+  font-family: 'Gilroy-Regular'
+  text-decoration: none
+.card
+  display: flex
+  flex-direction: column
+  width: 380px
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2)
+  border-radius: 10px
+  margin-bottom: 100px
+  &__image
+    margin-top: 50px
+  &__title
+    margin-top: 51px
+    margin-left: 48px
+    margin-right: 47px
+    font-family: 'Gilroy-Semibold'
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 0.05em
+    color: $titletext
+  &__subtitle
+    display: block
+    margin-top: 16px
+    margin-bottom: 32px
+    margin-left: 48px
+    margin-right: 48px
+    font-family: 'Gilroy-Regular'
+    font-size: 16px
+    line-height: 26px
+    letter-spacing: 0.05em
+    color: $titletext
+    opacity: 0.6
+  &__link
+    margin-left: 48px
+    margin-bottom: 48px
+    font-family: 'Gilroy-Semibold'
+    font-size: 14px
+    line-height: 30px
+    letter-spacing: 0.05em
+    color: $link
+    text-decoration: none
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      display: flex
+      left: 105px
+      top: 7px
+      width: 24px
+      height: 24px
+      background: url('../img/help/link.svg') no-repeat
+  &__linkss
+    margin-right: 61px
+  &__links
+    margin-left: 56px
+    margin-bottom: 48px
+    font-family: 'Gilroy-Semibold'
+    font-size: 14px
+    line-height: 30px
+    letter-spacing: 0.05em
+    color: $link
+    text-decoration: none
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      display: flex
+      right: 105px
+      top: -1px
+      width: 24px
+      height: 24px
+      background: url('../img/help/link.svg') no-repeat
+      transform: rotate(180deg)
+
+
+
+.page
+  width: 24px
+  height: 24px
+
+
+.navigation
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  max-width: 300px
+  &__title, &__subtitle
+    margin-bottom: 4px
+    margin-top: 0
+    font-family: 'Gilroy-Regular'
+    font-size: 14px
+    line-height: 24px
+    letter-spacing: 0.04em
+    color: $titletext
+  &__subtitle
+    display: inline-block
+    opacity: 0.4
+  &__image
+    & svg
+      margin-left: 32px
