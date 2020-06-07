@@ -795,6 +795,9 @@ img {
   background: #ffffff;
   box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px; }
+  .form__contacts {
+    box-shadow: none;
+    margin-left: 0; }
   .form__text {
     margin-top: 56px;
     margin-left: 56px;

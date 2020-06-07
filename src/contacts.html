@@ -92,20 +92,20 @@
           <!-- /.addres -->
           <div class="form">
             <h3 class="form__text">SEND US MESSAGE</h3>
-            <form action="send.php">
+            <form action="" method="POST" class="form modal__form form__contacts" id="ajax_form">
               <p class="form__block">
                 <label class="form__label">Full Name</label>
-                <input class="form__input" type="text" name="first_name" placeholder="Your Name">
+                <input class="form__input" type="text" name="first_name" placeholder="Your Name" minlength="2" required >
               </p>
               <p class="form__block">
                 <label class="form__label">Email</label>
-                <input class="form__input" type="email" name="email" placeholder="Your Email">
+                <input class="form__input" type="email" name="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
               </p>
               <p class="form__block">
                 <label class="form__label">Message</label>
-                <textarea class="form__textarea" name="message" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                <textarea class="form__textarea" name="message" id="" cols="30" rows="5" placeholder="Your Message" minlength="5" required></textarea>
               </p>
-              <a href="#" class="button form__button">SUBMIT</a>
+              <a href="#" class="button form__button" id="btn">SUBMIT</a>
             </form>
           </div>
           <!-- /.form -->
@@ -222,5 +222,16 @@
     <!-- /.footer__wrap -->
   </footer>
   <!-- /.footer -->
+  <div class="message">
+    <div class="message__dialog">
+      <button class="message__close"></button>
+      <span class="message__text">Форма успешно отправлена</span>
+    </div>
+  </div>
+  <!-- Вот в этот id="result_form" передается результат обработки формы -->
+  <div id="result_form"></div> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
