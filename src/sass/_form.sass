@@ -1,0 +1,140 @@
+.form
+  &__contacts
+    box-shadow: none
+    margin-left: 0
+  &__button
+    width: 100%
+    display: flex
+    margin: 0 auto
+    justify-content: center
+    margin-top: 20px
+    border: none
+    outline: none
+    cursor: pointer
+    &:active, &:focus 
+      outline: none
+
+
+/** Другая форма **/
+.form-container
+  padding-left: 56px
+  padding-right: 56px
+  padding-bottom: 25px
+  width: 100%
+  max-width: 580px
+  margin-left: 30px
+  background: $white
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2)
+  border-radius: 10px
+
+.headers
+  padding-bottom: 5px
+  padding-left: 0
+  padding-top: 20px
+  & h2 
+    margin: 0
+    margin-top: 56px
+    margin-left: 56px
+    margin-bottom: 48px
+    font-family: 'Gilroy-Semibold'
+    font-size: 20px
+    line-height: 30px
+    color: $titletext
+.form-control 
+	position: relative
+.form-control 
+  display: flex
+  flex-direction: column
+
+
+.form-control label 
+  margin-bottom: 8px
+  font-family: 'Gilroy-Semibold'
+  font-size: 16px
+  line-height: 30px
+  letter-spacing: 0.04em
+  color: $titletext
+  opacity: 0.8
+
+
+.form-control input 
+  padding-right: 42px
+  padding-left: 42px
+  padding-top: 21px
+  padding-bottom: 21px
+  opacity: 0.2
+  border: 2px solid $input
+  border-radius: 10px
+  font-family: 'Gilroy-Light'
+  font-size: 16px
+  letter-spacing: 0.04em
+
+
+.form-control input:focus 
+	outline: 0
+	border-color: #777
+
+
+.form-control.success input 
+	border-color: #2ecc71
+
+
+.form-control.error input 
+	border-color: #e74c3c
+
+/* ---------------------------- */
+.form-control textarea 
+  padding-right: 42px
+  padding-left: 42px
+  padding-top: 21px
+  padding-bottom: 21px
+  opacity: 0.2
+  border: 2px solid $input
+  border-radius: 10px
+  font-family: 'Gilroy-Light'
+  font-size: 16px
+  letter-spacing: 0.04em
+
+
+.form-control textarea:focus 
+	outline: 0
+	border-color: #777
+
+
+.form-control.success textarea 
+	border-color: #2ecc71
+
+
+.form-control.error textarea 
+	border-color: #e74c3c
+
+/* ---------------------------- */
+
+.form-control i 
+	visibility: hidden
+	position: absolute
+	top: 40px
+	right: 10px
+
+
+.form-control.success i.fa-check-circle 
+	color: #2ecc71
+	visibility: visible
+
+
+.form-control.error i.fa-exclamation-circle 
+	color: #e74c3c
+	visibility: visible
+
+
+.form-control small 
+  bottom: 4px
+  left: 11px
+.form-control small 
+	color: #e74c3c
+	position: absolute
+	visibility: hidden
+
+
+.form-control.error small 
+	visibility: visible
