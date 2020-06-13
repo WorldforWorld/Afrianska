@@ -1109,7 +1109,7 @@ input:valid {
 .form-control i {
   visibility: hidden;
   position: absolute;
-  top: 40px;
+  top: 60px;
   right: 10px; }
 
 .form-control.success i.fa-check-circle {
